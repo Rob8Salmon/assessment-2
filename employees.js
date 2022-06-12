@@ -20,7 +20,16 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor(name,shifts){
+        this.name = name;
+        this.shifts = shifts;
+    }
 
+    getSchedule = () => {
+        return console.log('${this.name} works ${this.shifts}')
+    }
+}
 
 
 /*
@@ -34,6 +43,7 @@
 */
 
 //CODE HERE
+let empOne = new Employee('Jess',['weekday mornings', 'weekend afternoons'])
 
 /*
     Call the `getSchedule` method on the
@@ -41,7 +51,7 @@
 */
 
 //CODE HERE
-
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -56,6 +66,10 @@
 */
 
 //CODE HERE
+let empTwo = {...empOne}
+empTwo.name = 'Nick'
+
+console.log(empTwo)
 
 
 
@@ -83,6 +97,25 @@
 */
 
 //CODE HERE
+
+class Manager extends Employee {
+    constructor(name, shifts, employees[]){
+        this._name = name;
+        this._shifts = shifts;
+        }
+
+        get this._name(){
+            return this.name;
+        }
+
+        get Employees(name){
+            console.log(${name} manages ${employees});
+        }
+
+        addEmployee(emp){
+            emp.push(employee);
+        }
+}
 
 
 
